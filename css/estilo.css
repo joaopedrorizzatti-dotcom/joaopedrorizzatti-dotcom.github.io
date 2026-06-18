@@ -26,6 +26,12 @@ main {
     font-family: 'Sora', sans-serif;
 }
 
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
 .esquerda, .experiencia, .educacao {
     background-color: var(--fundo-secao);
     border-radius: 16px;
