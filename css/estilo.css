@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+:root {
+    --cor-padrao: #c7531d;
+    --cor-barra: #b64e1e;
+    --fundo-secao: #f7ebeb;
+}
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor-padrao);
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 1rem;
+    margin: 10px;
+    font-family: 'Sora', sans-serif;
+}
+
+.esquerda, .experiencia, .educacao {
+    background-color: var(--fundo-secao);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.experiencia, .educacao {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+.esquerda {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data, i {
+    color: var(--cor-padrao);
+}
+
+ul {
+    list-style: none;
+}
+
+.imagen-esquerda {
+    position: relative;
+}
+
+.imagen-esquerda img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.imagen-esquerda h1 {
+    position: absolute;
+    bottom: 0;
+    color: rgb(34, 194, 223);
+}
+
+.pessoal, .linguagens, .habilidades {
+    padding: 16px;
+    line-height: 20px;
+}
+    
+.progresso {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    background-color: var(--cor-barra);
+    transition: 100ms ease;
+    border-radius: 20px;
+}
+
+.franca {
+    border-radius: 20px;
+    height: 100%;
+    background-color: var(--cor-padrao);
+}
+
+.nome-item {
+    font-weight: bolder;
+}
+
+footer {
+ color: white;
+ background-color: #333;
+ padding: 1.5rem;
+ display: flex;
+ flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+footer a {
+    color: var(--cor-padrao);
+    text-decoration: none;
+    padding: 5px ;
+    transition: 100ms ease;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+footer a:hover {
+    color: white;
+    border: 2px solid  white;
+
+}
